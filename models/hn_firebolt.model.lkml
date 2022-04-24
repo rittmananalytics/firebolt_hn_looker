@@ -45,3 +45,8 @@ explore: authors {
     relationship: many_to_one
   }
 }
+explore: hacker_news_all {
+  always_filter: { filters: [type: "story,comment", hacker_news_all.posted_month: "12 months"]}
+  view_label: "Hacker News"
+  label: "Hacker News"
+}
